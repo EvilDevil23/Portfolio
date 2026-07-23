@@ -1,4 +1,6 @@
-
+*{
+    box-sizing:border-box;
+}
 
 body{
     margin:0;
@@ -365,7 +367,7 @@ p{
     position:fixed;
     top:30px;
     left:30px;
-    padding:12px 20px;
+    padding:15px 25px;
     border:none;
     border-radius:12px;
     background:rgba(255,255,255,0.08);
