@@ -1149,13 +1149,14 @@ p{
 
 @media (max-width:600px){ /*MOVILES*/
     #titulo{
-        font-size:34px;
+        font-size:30px;
         line-height:1.2;
         text-align:center;
-        width:fit-content;
+
+        display:inline-block;
         max-width:90vw;
+
         margin:0 auto;
-        white-space:normal;
     }
     #subtitulo{
         font-size:17px;
