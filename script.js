@@ -538,8 +538,8 @@ class FairyParticle{
 
 const textoTitulo =
 window.innerWidth <= 600
-? "Hola, soy\nMiguel"
-: "Hola, soy Miguel";
+? "Hi, I'm\nMiguel"
+: "Hi, I'm Miguel";
 
 escribir(titulo, textoTitulo, 100);
 
