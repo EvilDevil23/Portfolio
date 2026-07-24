@@ -74,33 +74,34 @@ let mouse = {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // EVENTOS
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-cards.forEach(card => {
-    card.addEventListener("mousemove", (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const rotateY = (x - rect.width / 2) / 15;
-        const rotateX = -(y - rect.height / 2) / 15;
-        card.style.transform = `
-        translateY(-40px)
-        scale(1.12)
-        rotateX(${rotateX}deg)
-        rotateY(${rotateY}deg)
-        `;
+if (window.innerWidth > 768) {
+    cards.forEach(card => {
+        card.addEventListener("mousemove", (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const rotateY = (x - rect.width / 2) / 15;
+            const rotateX = -(y - rect.height / 2) / 15;
+            card.style.transform = `
+                translateY(-40px)
+                scale(1.12)
+                rotateX(${rotateX}deg)
+                rotateY(${rotateY}deg)
+            `;
+        });
+        card.addEventListener("mouseleave", () => {
+            const initialRotation =
+                card.classList.contains("developer")
+                ? -8
+                : 8;
+            card.style.transform = `
+                translateY(0)
+                scale(1)
+                rotate(${initialRotation}deg)
+            `;
+        });
     });
-    card.addEventListener("mouseleave", () => {
-        const initialRotation =
-        card.classList.contains("developer")
-        ? -8
-        : 8;
-        card.style.transform =
-        `
-        translateY(0px)
-        scale(1)
-        rotate(${initialRotation}deg)
-        `;
-    });
-});
+}
 
 
 
