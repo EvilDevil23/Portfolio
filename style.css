@@ -1109,3 +1109,62 @@ p{
     color:#cfcfcf;
     font-size:14px;
 }
+
+/* ========================= */
+/* RESPONSIVO */
+/* ========================= */
+
+@media (max-width:1200px){ /*PORTATILES*/
+    #titulo{
+        font-size:54px;
+    }
+    #subtitulo{
+        font-size:22px;
+    }
+    #continuar{
+        margin-top:60px;
+    }
+}
+
+@media (max-width:900px){ /*TABLETS*/
+    #titulo{
+        font-size:44px;
+        text-align:center;
+        padding:0 30px;
+    }
+    #subtitulo{
+        font-size:20px;
+        text-align:center;
+        padding:0 30px;
+    }
+    #continuar{
+        font-size:16px;
+        margin-top:50px;
+    }
+    .avatar{
+        width:180px;
+    }
+
+}
+
+@media (max-width:600px){ /*MOVILES*/
+    #titulo{
+        font-size:34px;
+        line-height:1.2;
+        text-align:center;
+        padding:0 20px;
+    }
+    #subtitulo{
+        font-size:17px;
+        line-height:1.6;
+        text-align:center;
+        padding:0 25px;
+    }
+    #continuar{
+        font-size:14px;
+        margin-top:45px;
+    }
+    .avatar{
+        width:140px;
+    }
+}
