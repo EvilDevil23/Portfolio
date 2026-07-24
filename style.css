@@ -1161,6 +1161,9 @@ p{
 }
 
 @media (max-width:600px){ /*MOVILES*/
+    body{
+        background:red !important;
+    }
     #titulo{
         white-space:pre-line;
         font-size:clamp(26px,9vw,40px);
