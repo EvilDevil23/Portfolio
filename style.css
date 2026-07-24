@@ -1181,19 +1181,20 @@ p{
     .avatar{
         width:140px;
     }
-
-
     
+    #selector{
+        transform:scale(.95);
+    }
     .card{
-        width:190px;
-        height:280px;
+        width:clamp(135px, 34vw, 240px);
+        height:clamp(200px, 50vw, 340px);
     }
     .developer{
-        left:calc(50% - 140px);
+        left:calc(50% - 145px);
         transform:rotate(-6deg);
     }
     .designer{
-        left:calc(50% - 10px);
+        left:calc(50% - 5px);
         transform:rotate(6deg);
     }
     .card h2{
