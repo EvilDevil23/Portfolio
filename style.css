@@ -1190,9 +1190,9 @@ p{
     }
     .card{
         position:relative;
-        width:85vw;
         max-width:320px;
-        height:260px;
+        width:180px;
+        height:270px;
     }
     .card h2{
         font-size:1.6rem;
@@ -1209,13 +1209,4 @@ p{
         height:50px;
     }
 
-}
-@media (max-width:768px){
-    .card{
-        position:relative;
-        transform:none !important;
-        width:90vw;
-        max-width:330px;
-        height:250px;
-    }
 }
