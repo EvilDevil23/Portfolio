@@ -323,13 +323,14 @@ function updateFairy(){
 
 function escribir(elemento, texto, velocidad){
     let i = 0;
-    let intervalo = setInterval(() => {
-        elemento.innerHTML = texto.substring(0, i);
+    let intervalo = setInterval(()=>{
+        elemento.textContent =
+            texto.substring(0,i);
         i++;
         if(i > texto.length){
             clearInterval(intervalo);
         }
-    }, velocidad);
+    },velocidad);
 }
 
 function resizeCanvas(){
@@ -536,7 +537,12 @@ class FairyParticle{
 // INICIALIZACIÓN
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-escribir(titulo, "Hola, soy Miguel", 100);
+const textoTitulo =
+window.innerWidth <= 600
+? "Hola, soy\nMiguel"
+: "Hola, soy Miguel";
+
+escribir(titulo, textoTitulo, 100);
 
 setTimeout(() => {
 
@@ -557,8 +563,3 @@ openPage(developerCard, developerPage);
 openPage(designerCard, designerPage);
 openPage(gameDesignerCard, gameDesignerPage);
 
-if (window.innerWidth <= 600) {
-    titulo.innerHTML = "Hola,<br>soy Miguel";
-} else {
-    titulo.textContent = "Hola, soy Miguel";
-}

@@ -1149,6 +1149,7 @@ p{
 
 @media (max-width:600px){ /*MOVILES*/
     #titulo{
+        white-space:pre-line;
         font-size:clamp(26px,9vw,40px);
         text-align:center;
         line-height:1.1;
