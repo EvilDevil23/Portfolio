@@ -556,3 +556,9 @@ updateFairy();
 openPage(developerCard, developerPage);
 openPage(designerCard, designerPage);
 openPage(gameDesignerCard, gameDesignerPage);
+
+if (window.innerWidth <= 600) {
+    titulo.innerHTML = "Hola,<br>soy Miguel";
+} else {
+    titulo.textContent = "Hola, soy Miguel";
+}
