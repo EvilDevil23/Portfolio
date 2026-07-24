@@ -1119,51 +1119,9 @@ p{
     }
 }
 
-@media (max-width:900px){ /*TABLETS*/
-    #titulo{
-        font-size:44px;
-        text-align:center;
-        padding:0 30px;
-    }
-    #subtitulo{
-        font-size:20px;
-        text-align:center;
-        padding:0 30px;
-    }
-    #continuar{
-        font-size:16px;
-        margin-top:50px;
-    }
-    .avatar{
-        width:180px;
-    }
 
 
-    .card{
-        width:240px;
-        height:340px;
-    }
-    .card h2{
-        font-size:1.7rem;
-    }
-    .card p{
-        font-size:15px;
-    }
-    .icon1{
-        width:65px;
-        height:65px;
-    }
-    .icon2{
-        width:55px;
-        height:55px;
-    }
-
-}
-
-@media (max-width:600px){ /*MOVILES*/
-    body{
-        background:red !important;
-    }
+@media (max-width:900px){ /*MOVILES*/
     #titulo{
         white-space:pre-line;
         font-size:clamp(26px,9vw,40px);
