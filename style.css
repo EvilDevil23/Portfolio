@@ -1351,12 +1351,12 @@ p{
     }
     .vhs{
         width:100%;
-        height:60px;
+        height:48px;
         padding-left:15px;
         gap:12px;
     }
     .vhs span{
-        font-size:0.9rem;
+        font-size:15px;
     }
     .icon-chest,
     .icon-disc,
@@ -1364,8 +1364,8 @@ p{
     .icon-pointer,
     .icon-puzzle,
     .icon-dialogue{
-        width:30px;
-        height:30px;
+        width:26px;
+        height:26px;
     }
     .vhs:hover{
         transform:scale(1.02);
