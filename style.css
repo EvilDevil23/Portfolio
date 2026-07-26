@@ -1266,4 +1266,39 @@ p{
         margin-bottom:18px;
     }
 
+    #badges-section{
+        padding:70px 20px;
+    }
+    #badges-section h2{
+        font-size:2rem;
+        margin-bottom:40px;
+    }
+    #badges-container{
+        gap:25px;
+        justify-content:center;
+    }
+    .badge{
+        width:clamp(95px, 24vw, 120px);
+        height:clamp(95px, 24vw, 120px);
+    }
+    .badge img{
+        width:clamp(50px, 13vw, 70px);
+        height:clamp(50px, 13vw, 70px);
+    }
+    .badge-container span{
+        font-size:0.9rem;
+    }
+    .badge-back{
+        padding:8px;
+    }
+    .badge-back h3{
+        font-size:15px;
+        margin-bottom:5px;
+    }
+    .badge-back li{
+        font-size:8px;
+        margin:2px 0;
+    }
+
+
 }
