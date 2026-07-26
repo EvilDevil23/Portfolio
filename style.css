@@ -1158,6 +1158,54 @@ p{
         height:55px;
     }
 
+    #developer-page{
+        padding:25px;
+    }
+    #designer-page{
+        padding:25px;
+    }
+    .back-button{
+        top:20px;
+        left:20px;
+        padding:12px 18px;
+        font-size:.9rem;
+    }
+    #hero{
+        flex-direction:column;
+        justify-content:center;
+        text-align:center;
+        gap:40px;
+        padding:90px 20px 50px;
+    }
+    #hero-avatar{
+        width:clamp(170px,45vw,240px);
+        height:clamp(170px,45vw,240px);
+    }
+    #hero-info{
+        max-width:100%;
+    }
+    #hero-info h1{
+        font-size:clamp(2.5rem,10vw,3.5rem);
+    }
+    #hero-info h2{
+        font-size:clamp(1.1rem,4vw,1.6rem);
+        line-height:1.4;
+    }
+    #hero-info p{
+        font-size:clamp(.95rem,3vw,1.1rem);
+        line-height:1.7;
+    }
+    #hero-links{
+        margin-top:35px;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+    #hero-links a{
+        min-width:120px;
+        padding:14px 22px;
+    }
+
 }
 
 @media (max-width:600px){ /*MOVILES*/
@@ -1167,7 +1215,6 @@ p{
         text-align:center;
         line-height:1.1;
         padding:0 20px;
-        color:red !important;
     }
     #subtitulo{
         font-size:15px;
@@ -1187,8 +1234,8 @@ p{
         transform:scale(.95);
     }
     .card{
-        width:clamp(135px, 34vw, 240px);
-        height:clamp(200px, 50vw, 340px);
+        width:clamp(135px, 34vw, 260px);
+        height:clamp(200px, 50vw, 360px);
     }
     .developer{
         left:calc(50% - 145px);
@@ -1199,18 +1246,24 @@ p{
         transform:rotate(6deg);
     }
     .card h2{
-        font-size:1.6rem;
+        font-size:clamp(1.3rem, 4.8vw, 1.8rem);
+        margin:18px 0 10px;
+        letter-spacing:1px;
     }
     .card p{
-        font-size:0.9rem;
+        width:82%;
+        font-size:clamp(.75rem, 2.7vw, .95rem);
+        line-height:1.35;
     }
     .icon1{
-        width:58px;
-        height:58px;
+        width:clamp(46px, 12vw, 65px);
+        height:clamp(46px, 12vw, 65px);
+        margin-bottom:18px;
     }
     .icon2{
-        width:50px;
-        height:50px;
+        width:clamp(42px, 11vw, 58px);
+        height:clamp(42px, 11vw, 58px);
+        margin-bottom:18px;
     }
 
 }
