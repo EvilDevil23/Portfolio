@@ -1301,4 +1301,79 @@ p{
     }
 
 
+    #systems-section{
+        padding:70px 20px;
+    }
+    #systems-section h2{
+        font-size:2rem;
+        margin-bottom:35px;
+    }
+    #systems-layout{
+        flex-direction:column;
+        gap:30px;
+        align-items:center;
+    }
+    #preview-screen{
+        width:100%;
+        max-width:420px;
+        height:auto;
+        padding:18px;
+        border-radius:18px;
+    }
+    #preview-video{
+        width:100%;
+        height:190px;
+        border-radius:12px;
+    }
+    #preview-info{
+        margin-top:15px;
+    }
+    #preview-title{
+        font-size:1.35rem;
+        margin-bottom:10px;
+    }
+    #preview-description{
+        font-size:0.9rem;
+        line-height:1.5;
+    }
+    #preview-tags{
+        gap:8px;
+        margin-top:15px;
+    }
+    .tag{
+        font-size:12px;
+        padding:5px 10px;
+    }
+    #vhs-shelf{
+        width:100%;
+        max-width:420px;
+        gap:14px;
+    }
+    .vhs{
+        width:100%;
+        height:60px;
+        padding-left:15px;
+        gap:12px;
+    }
+    .vhs span{
+        font-size:0.9rem;
+    }
+    .icon-chest,
+    .icon-disc,
+    .icon-ray,
+    .icon-pointer,
+    .icon-puzzle,
+    .icon-dialogue{
+        width:30px;
+        height:30px;
+    }
+    .vhs:hover{
+        transform:scale(1.02);
+    }
+    .vhs.active{
+        transform:scale(1.02);
+    }
+
+    
+
 }
