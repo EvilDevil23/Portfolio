@@ -372,74 +372,45 @@ class Particle{
     constructor(){
 
         this.x = Math.random() * canvas.width;
-
         this.y = Math.random() * canvas.height;
-
         this.size = Math.random()*4 +0.5;
-
         this.isStar = Math.random() < 0.35;
-
         this.speedY = Math.random()*0.4 + 0.2;
-
         this.opacity = Math.random();
-
         this.fadeSpeed = Math.random()*0.02 + 0.005;
-
         if(this.isStar){
-
             this.size = this.size + 1.0;
-
         }
     }
 
     draw(){
         ctx.shadowBlur = 12;
-
         ctx.shadowColor = "#8cc8ff";
-
         ctx.fillStyle = `rgba(180,220,255,${this.opacity})`;
         if(this.isStar){
-
             this.drawStar();
-
         }else{
-
             ctx.beginPath();
-
             ctx.arc(this.x,this.y,this.size,0,Math.PI*2);
-
             ctx.fill();
-
         }
 
         ctx.shadowBlur = 0;
-
     }
 
     drawStar(){
 
         ctx.beginPath();
-
         ctx.moveTo(this.x, this.y-this.size);
-
         ctx.lineTo(this.x+this.size/4,this.y-this.size/4);
-
         ctx.lineTo(this.x+this.size,this.y);
-
         ctx.lineTo(this.x+this.size/4,this.y+this.size/4);
-
         ctx.lineTo(this.x,this.y+this.size);
-
         ctx.lineTo(this.x-this.size/4,this.y+this.size/4);
-        
         ctx.lineTo(this.x-this.size,this.y);
-
         ctx.lineTo(this.x-this.size/4,this.y-this.size/4);
-
         ctx.closePath();
-
         ctx.fill();
-
     }
 
     update(){
@@ -469,7 +440,6 @@ class FairyParticle{
     constructor(x,y){
 
         this.x = x;
-
         this.y = y;
 
         this.size = Math.random()*4 + 2;
@@ -480,9 +450,7 @@ class FairyParticle{
 
         this.speedY = -Math.random()*1.5;
         if(this.star){
-
             this.size = this.size + 1.0;
-
         }
     }
 
@@ -492,19 +460,12 @@ class FairyParticle{
         fairyCtx.fillStyle = `rgba(200,230,255,${this.life})`;
 
         if(this.star){
-
             this.drawStar();
-
         }else{
-
             fairyCtx.beginPath();
-
             fairyCtx.arc(this.x,this.y,this.size,0,Math.PI*2);
-
             fairyCtx.fill();
-
         }
-
     }
     drawStar(){
         fairyCtx.beginPath();
@@ -521,15 +482,10 @@ class FairyParticle{
     }
 
     update(){
-
         this.x += this.speedX;
-
         this.y += this.speedY;
-
         this.life -= 0.02;
-
     }
-
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -561,4 +517,3 @@ updateFairy();
 openPage(developerCard, developerPage);
 openPage(designerCard, designerPage);
 openPage(gameDesignerCard, gameDesignerPage);
-
