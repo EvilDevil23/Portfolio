@@ -7,6 +7,7 @@ const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
 const cards = document.querySelectorAll(".card");
 
+
 const fairy = document.getElementById("fairy");
 const fairyCanvas =document.getElementById("fairyCanvas");
 const fairyCtx =fairyCanvas.getContext("2d");
@@ -23,6 +24,17 @@ const previewDescription =document.getElementById("preview-description");
 const previewVideo =document.getElementById("preview-video");
 const previewScreen =document.getElementById("preview-screen");
 const tagsContainer =document.getElementById("preview-tags");
+
+// Botones de navegación de la página de inicio
+const goDeveloper = document.getElementById("go-developer");
+const goDesigner = document.getElementById("go-designer");
+goDeveloper.addEventListener("click", () => {
+document.querySelector(".card.developer").click();
+});
+goDesigner.addEventListener("click", () => {
+document.querySelector(".card.designer").click();
+});
+
 tagsContainer.innerHTML = "";
 const firstTape = tapes[0];
 firstTape.classList.add("active");
@@ -52,6 +64,9 @@ const viewerImage3 =document.getElementById("viewer-image3");
 const projectWindow =document.getElementById("project-window");
 const projectContent =document.getElementById("project-window-content");
 
+const mainLabels =document.getElementById("main-labels");
+const developerLabels =document.getElementById("developer-labels");
+const designerLabels =document.getElementById("designer-labels");
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // VARIABLES
@@ -62,6 +77,7 @@ let mouseX = fairyX;
 let mouseY = fairyY;
 let lastMouseX = mouseX;
 let lastMouseY = mouseY;
+let transicionEnCurso = false;
 
 const particles = [];
 const fairyTrail = [];
@@ -118,6 +134,9 @@ backButton.forEach(button => {
 });
 
 developerCard.addEventListener("click",()=>{
+    if (transicionEnCurso) return;
+    transicionEnCurso = true;
+
     developerCard.classList.add("launch");
     setTimeout(()=>{
         transitionScreen.classList.add("wipe");
@@ -130,6 +149,10 @@ developerCard.addEventListener("click",()=>{
         .style.display = "none";
         document.getElementById("foot")
         .style.display = "none";
+        document.getElementById("main-labels")
+        .style.display = "none";
+        document.getElementById("developer-labels")
+        .style.display = "flex";
         developerPage.classList.add("active");
     },1100);
 });
@@ -268,6 +291,9 @@ projectWindow.addEventListener("mouseleave",()=>{
 
 
 designerCard.addEventListener("click",()=>{
+    if (transicionEnCurso) return;
+    transicionEnCurso = true;
+    
     designerCard.classList.add("launch");
     setTimeout(()=>{
         transitionScreen.classList.add("wipe");
@@ -280,6 +306,11 @@ designerCard.addEventListener("click",()=>{
         .style.display = "none";
         document.getElementById("foot")
         .style.display = "none";
+        document.getElementById("main-labels")
+        .style.display = "none";
+        document.getElementById("designer-labels")
+        .style.display = "flex";
+        designerLabels.classList.add("active");
         designerPage.classList.add("active");
     },1100);
 });
@@ -495,9 +526,11 @@ setTimeout(() => {
 
 resizeCanvas();
 
-for(let i=0;i<100;i++){
+for(let i=0;i<150;i++){
     particles.push(new Particle());
 }
+document.getElementById("developer-labels").style.display = "none";
+document.getElementById("designer-labels").style.display = "none";
 
 animate();
 updateFairy();
@@ -505,3 +538,4 @@ updateFairy();
 openPage(developerCard, developerPage);
 openPage(designerCard, designerPage);
 openPage(gameDesignerCard, gameDesignerPage);
+
