@@ -128,6 +128,8 @@ developerCard.addEventListener("click",()=>{
         .style.display = "none";
         document.getElementById("intro")
         .style.display = "none";
+        document.getElementById("foot")
+        .style.display = "none";
         developerPage.classList.add("active");
     },1100);
 });
@@ -149,12 +151,9 @@ tapes.forEach(tape => {
             "screen-glow"
         );
 
-        previewTitle.textContent =
-        tape.dataset.title;
-        previewDescription.textContent =
-        tape.dataset.description;
-        previewVideo.src =
-        tape.dataset.video;
+        previewTitle.textContent = tape.dataset.title;
+        previewDescription.textContent = tape.dataset.description;
+        previewVideo.src = tape.dataset.video;
         previewVideo.load();
         previewVideo.play();
         tagsContainer.innerHTML = "";
@@ -194,13 +193,10 @@ projectCards.forEach(card => {
 projectCards.forEach(card=>{
     card.querySelector(".project-button")
     .addEventListener("click",()=>{
-        viewerTitle.textContent =
-        card.dataset.title;
-        viewerDescription.textContent =
-        card.dataset.long;
+        viewerTitle.textContent = card.dataset.title;
+        viewerDescription.textContent = card.dataset.long;
         console.log(viewerDescription.textContent);
-        viewerVideo.src =
-        card.dataset.video;
+        viewerVideo.src = card.dataset.video;
         viewerLink.onclick = () => {
             window.open(
                 card.dataset.link,
@@ -232,8 +228,7 @@ projectViewer.addEventListener("click",(e)=>{
         projectViewer.classList.remove("active");
     }
 
-    card.style.transform =
-    "scale(.97)";
+    card.style.transform = "scale(.97)";
     setTimeout(()=>{
         card.style.transform="";
     },150);
@@ -244,12 +239,9 @@ projectViewer.addEventListener("click",(e)=>{
 
 //lo siguiente no va, borrar si me canso
 projectWindow.addEventListener("mousemove",(e)=>{
-    const rect =
-    projectWindow.getBoundingClientRect();
-    const x =
-    e.clientX - rect.left;
-    const y =
-    e.clientY - rect.top;
+    const rect = projectWindow.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
     projectContent.style.setProperty(
         "--mouse-x",
         `${x}px`
@@ -262,12 +254,9 @@ projectWindow.addEventListener("mousemove",(e)=>{
 const media =
 document.getElementById("viewer-media");
 projectWindow.addEventListener("mousemove",(e)=>{
-    const rect =
-    projectWindow.getBoundingClientRect();
-    const x =
-    (e.clientX-rect.left)/rect.width-0.5;
-    const y =
-    (e.clientY-rect.top)/rect.height-0.5;
+    const rect = projectWindow.getBoundingClientRect();
+    const x = (e.clientX-rect.left)/rect.width-0.5;
+    const y = (e.clientY-rect.top)/rect.height-0.5;
     media.style.transform=
     `
     translate(${x*10}px,${y*10}px)
@@ -288,6 +277,8 @@ designerCard.addEventListener("click",()=>{
         document.getElementById("selector")
         .style.display = "none";
         document.getElementById("intro")
+        .style.display = "none";
+        document.getElementById("foot")
         .style.display = "none";
         designerPage.classList.add("active");
     },1100);
@@ -335,11 +326,8 @@ function escribir(elemento, texto, velocidad){
 function resizeCanvas(){
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    fairyCanvas.width =
-    window.innerWidth;
-
-    fairyCanvas.height =
-    window.innerHeight;
+    fairyCanvas.width = window.innerWidth;
+    fairyCanvas.height = window.innerHeight;
 }
 
 function animate(){

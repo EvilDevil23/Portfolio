@@ -19,42 +19,44 @@
         </div>
         <nav aria-label="Principal">
         <ul>
-            <li><a href="#selector">Cards</a></li>
-            <li><a href="#developer-page">Developer Profile</a></li>
-            <li><a href="#trayectoria">Trayectoria</a></li>
-            <li><a href="#devlog">Devlog</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li class="main-labels"><a href="#selector">Cards</a></li>
+            <li class="main-labels"><a href="#developer-page">Developer Profile</a></li>
+            <li class="main-labels"><a href="#trayectoria">Trayectoria</a></li>
+            <li class="main-labels"><a href="#contacto">Contacto</a></li>
+            
         </ul>
         </nav>
     </header>
 
-    <section id="intro">
-        <!---<img src="imagenes/miguel.png" class="avatar"> --->
-        <h1 id="titulo"></h1>
-        <p id="subtitulo"></p>
-        <p id="continuar">Choose a card:</p>
-    </section>
+    <div class = "init">
+        <section id="intro">
+            <!---<img src="imagenes/miguel.png" class="avatar"> --->
+            <h1 id="titulo"></h1>
+            <p id="subtitulo"></p>
+            <p id="continuar">Choose a card:</p>
+        </section>
 
-    <section id="selector">
-        <div class="card developer">
-            <svg class="icon1" viewBox="0 0 24 24"><path fill="currentColor" d="M9.17,13.83l-2.734-2.734c-.281-.281-.436-.655-.436-1.052s.155-.771,.436-1.053l2.778-2.777,.707,.707-2.778,2.777c-.092,.092-.143,.215-.143,.346s.051,.253,.143,.345l2.734,2.734-.707,.707Zm7.734-3.441l-2.757,2.757,.707,.707,2.757-2.757c.58-.58,.58-1.524,0-2.105l-2.801-2.801-.707,.707,2.801,2.801c.191,.19,.191,.5,0,.691Zm7.096,5.611v2.5c0,1.378-1.122,2.5-2.5,2.5H2.5c-1.378,0-2.5-1.122-2.5-2.5v-2.5H2V3H22v13h2Zm-21,0h5.707l1,1h4.586l1-1h5.707V4H3v12Zm20,1h-7.293l-1,1h-5.414l-1-1H1v1.5c0,.827,.673,1.5,1.5,1.5H21.5c.827,0,1.5-.673,1.5-1.5v-1.5Z"/></svg>
-            <h2>Developer</h2>
-            <p>
-                Unity • C# • C++ • C<br>
-                Java • Bash
-            </p>
-        </div>
+        <section id="selector">
+            <div class="card developer">
+                <svg class="icon1" viewBox="0 0 24 24"><path fill="currentColor" d="M9.17,13.83l-2.734-2.734c-.281-.281-.436-.655-.436-1.052s.155-.771,.436-1.053l2.778-2.777,.707,.707-2.778,2.777c-.092,.092-.143,.215-.143,.346s.051,.253,.143,.345l2.734,2.734-.707,.707Zm7.734-3.441l-2.757,2.757,.707,.707,2.757-2.757c.58-.58,.58-1.524,0-2.105l-2.801-2.801-.707,.707,2.801,2.801c.191,.19,.191,.5,0,.691Zm7.096,5.611v2.5c0,1.378-1.122,2.5-2.5,2.5H2.5c-1.378,0-2.5-1.122-2.5-2.5v-2.5H2V3H22v13h2Zm-21,0h5.707l1,1h4.586l1-1h5.707V4H3v12Zm20,1h-7.293l-1,1h-5.414l-1-1H1v1.5c0,.827,.673,1.5,1.5,1.5H21.5c.827,0,1.5-.673,1.5-1.5v-1.5Z"/></svg>
+                <h2>Developer</h2>
+                <p>
+                    Unity • C# • C++ • C<br>
+                    Java • Bash
+                </p>
+            </div>
 
-        <div class="card designer">
-            <svg class="icon2" viewBox="0 0 24 24"><path fill="currentColor" d="M10.5,11c-4.373,0-5.449,6.156-5.493,6.418l-.097,.582h5.59c1.93,0,3.5-1.57,3.5-3.5,0-.091-.02-.177-.027-.267L23.127,5.024c1.146-1.148,1.146-3.016,0-4.164C22.548,.283,21.696-.04,20.963,0c-.807,.022-1.577,.38-2.128,.998L10.658,11.016c-.053-.002-.104-.016-.158-.016Zm0,6H6.122c.36-1.431,1.543-5,4.378-5,1.379,0,2.5,1.122,2.5,2.5s-1.121,2.5-2.5,2.5ZM19.596,1.646c.354-.396,.862-.632,1.411-.647,.491-.023,1.044,.2,1.413,.57,.757,.758,.757,1.992,0,2.75L13.698,13.091c-.374-.845-1.072-1.51-1.936-1.846L19.596,1.646Zm3.404,6.343v9.011h-6v6H1V2.5c0-.827,.673-1.5,1.5-1.5h13.75l.816-1H2.5C1.121,0,0,1.122,0,2.5V24H18.207l5.793-5.793V6.983l-1,1.006Zm-5,14.804v-4.793h4.793l-4.793,4.793Z"/></svg>
-            <h2>Designer</h2>
-            <p>
-                Pixel Art • Concept<br>
-                Personajes • 3D • UI 
-            </p>
-        </div>
+            <div class="card designer">
+                <svg class="icon2" viewBox="0 0 24 24"><path fill="currentColor" d="M10.5,11c-4.373,0-5.449,6.156-5.493,6.418l-.097,.582h5.59c1.93,0,3.5-1.57,3.5-3.5,0-.091-.02-.177-.027-.267L23.127,5.024c1.146-1.148,1.146-3.016,0-4.164C22.548,.283,21.696-.04,20.963,0c-.807,.022-1.577,.38-2.128,.998L10.658,11.016c-.053-.002-.104-.016-.158-.016Zm0,6H6.122c.36-1.431,1.543-5,4.378-5,1.379,0,2.5,1.122,2.5,2.5s-1.121,2.5-2.5,2.5ZM19.596,1.646c.354-.396,.862-.632,1.411-.647,.491-.023,1.044,.2,1.413,.57,.757,.758,.757,1.992,0,2.75L13.698,13.091c-.374-.845-1.072-1.51-1.936-1.846L19.596,1.646Zm3.404,6.343v9.011h-6v6H1V2.5c0-.827,.673-1.5,1.5-1.5h13.75l.816-1H2.5C1.121,0,0,1.122,0,2.5V24H18.207l5.793-5.793V6.983l-1,1.006Zm-5,14.804v-4.793h4.793l-4.793,4.793Z"/></svg>
+                <h2>Designer</h2>
+                <p>
+                    Pixel Art • Concept<br>
+                    Personajes • 3D • UI 
+                </p>
+            </div>
 
-    </section>
+        </section>
+    </div>
 
     <canvas id="particles"></canvas>
     <canvas id="fairyCanvas"></canvas>
@@ -576,8 +578,73 @@
 
     </section>
 
+    
+  <footer id="foot">
 
+    <section id="contact-section">
+            <h2>MY CONTACT</h2>
+            <p class="contact-subtitle">
+                This is where our next project begins.
+            </p>
+            <div id="contact-grid">
+                    <div class="contact-row">
+                        <a href="TU_GITHUB" target="_blank" class="contact-card">
+                            <div class="contact-icon">
+                                <img src="assets/badges/github.png" alt="">
+                            </div>
+                            <h3>GitHub</h3>
+                            <p>Explore my repositories.</p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/miguel-garc%C3%ADa-figueroa-a45535303/" target="_blank" class="contact-card">
+                            <div class="contact-icon">
+                                <img src="assets/badges/linkedin.png" alt="">
+                            </div>
+                            <h3>LinkedIn</h3>
+                            <p>Let's connect.</p>
+                        </a>
+                        <a href="https://miguelgfi.itch.io/" target="_blank" class="contact-card">
+                            <div class="contact-icon">
+                                <img src="assets/badges/itch-io-logo.png" alt="">
+                            </div>
+                            <h3>itch.io</h3>
+                            <p>Play my games.</p>
+                        </a>
+                    </div>
+                    <div class="contact-row">
+                        <a href="assets/resume.pdf" target="_blank" class="contact-card">
+                            <div class="contact-icon">
+                                <svg class="icon-cv" viewBox="0 0 24 24" alt=""><path fill="currentColor" d="m19.949,5.536l-3.484-3.486c-1.323-1.322-3.081-2.05-4.95-2.05h-4.515C4.243,0,2,2.243,2,5v14c0,2.757,2.243,5,5,5h10c2.757,0,5-2.243,5-5v-8.515c0-1.871-.729-3.628-2.051-4.95Zm-1.414,1.415c.318.317.587.67.805,1.05h-4.341c-.552,0-1-.449-1-1V2.659c.38.218.733.487,1.051.805l3.484,3.486Zm1.465,12.05c0,1.654-1.346,3-3,3H7c-1.654,0-3-1.346-3-3V5c0-1.654,1.346-3,3-3h4.515c.163,0,.325.008.485.023v4.977c0,1.654,1.346,3,3,3h4.977c.015.16.023.322.023.485v8.515Zm-4.293-2.895c.391.39.391,1.023,0,1.414l-1.613,1.614c-.577.577-1.336.866-2.094.866s-1.517-.289-2.094-.866l-1.613-1.614c-.391-.391-.391-1.024,0-1.414.391-.391,1.023-.391,1.414,0l1.293,1.293v-4.398c0-.552.447-1,1-1s1,.448,1,1v4.398l1.293-1.293c.391-.391,1.023-.391,1.414,0Z"/></svg>
 
+                                <!---<img src="assets/icons/resume.svg" alt=""> --->
+                            </div>
+                            <h3>Resume</h3>
+                            <p>Developer Resume.</p>
+                        </a>
+                        <a href="mailto:miguelgfigueroa0@gmail.com" class="contact-card">
+                            <div class="contact-icon">
+                                <svg class="icon-arroba" viewBox="0 0 24 24" alt=""><path fill="currentColor" d="M12,0A12.013,12.013,0,0,0,0,12c-.125,9.574,11.159,15.429,18.9,9.817a1.5,1.5,0,1,0-1.727-2.453C11.42,23.582,2.863,19.146,3,12,3.472.07,20.529.072,21,12v1.5a1.5,1.5,0,0,1-3,0V12C17.748,4.071,6.251,4.072,6,12a6.017,6.017,0,0,0,10.078,4.388A4.5,4.5,0,0,0,24,13.5V12A12.013,12.013,0,0,0,12,0Zm0,15a3,3,0,0,1,0-6A3,3,0,0,1,12,15Z"/></svg>
+
+                                <!--- <img src="assets/icons/email.svg" alt=""> --->
+                            </div>
+                            <h3>Email</h3>
+                            <p>Send me a message.</p>
+                        </a>
+                    </div>
+            </div>
+            <div id="status-box">
+                <span class="status-dot"></span>
+                Open to internships & junior positions
+            </div>
+            <footer>
+                <p>
+                    Thank you for visiting! 
+                </p>
+                <p>
+                    © 2025 Miguel García
+                </p>
+            </footer>
+        </section>
+    </footer>
 
 
     <section id="menu">
