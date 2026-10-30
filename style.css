@@ -1314,7 +1314,8 @@ p{
         padding:14px 22px;
     }
     #nav li{
-        font-size: 0.5rem;
+        font-size: 8rem;
+        height:clamp(20px,45vw,40px);
     }
 
 
