@@ -1313,6 +1313,9 @@ p{
         min-width:120px;
         padding:14px 22px;
     }
+    #nav li{
+        font-size: 0.8rem;
+    }
 
 
     #projects-section{
