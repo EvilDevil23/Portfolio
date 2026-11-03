@@ -1417,6 +1417,10 @@ p{
 
 @media (max-width:600px){ /*MOVILES*/
 
+    #nav li{
+        font-size: 8rem;
+        height:clamp(20px,45vw,40px);
+    }
     #titulo{
         white-space:pre-line;
         font-size:clamp(26px,9vw,40px);
