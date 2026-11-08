@@ -132,9 +132,9 @@ footer {
 
 #intro{
     flex: 1;
-    padding: 20px;
+    padding: 80px;
     width:100vw;
-    height:130vh;
+    height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -166,8 +166,8 @@ footer {
 }
 #selector{
     flex: 1;
-    padding: 20px;
-    min-height:100svh;
+    padding: 80px;
+    min-height:80svh;
     height:auto;
     perspective:1000px;
     display:flex;
