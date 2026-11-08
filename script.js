@@ -316,6 +316,31 @@ designerCard.addEventListener("click",()=>{
 });
 
 
+document.querySelectorAll(".nav").forEach(nav => {
+
+    const toggle = nav.querySelector(".menu-toggle");
+
+    if (!toggle) return;
+
+    toggle.addEventListener("click", () => {
+        const abierto = nav.classList.toggle("menu-open");
+
+        toggle.setAttribute("aria-expanded", abierto);
+        toggle.textContent = abierto ? "✕" : "☰";
+    });
+
+    // Cerrar menú al pulsar una opción
+    nav.querySelectorAll("a, button:not(.menu-toggle)").forEach(enlace => {
+        enlace.addEventListener("click", () => {
+            nav.classList.remove("menu-open");
+            toggle.setAttribute("aria-expanded", "false");
+            toggle.textContent = "☰";
+        });
+    });
+
+});
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // FUNCIONES UI
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
